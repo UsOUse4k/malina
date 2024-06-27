@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:malina/core/widgets/bottom_gap.dart';
 import 'package:malina/features/cart/widgets/product_widget.dart';
 import 'package:malina/gen/assets.gen.dart';
 
@@ -48,6 +49,8 @@ class ProductCart extends StatelessWidget {
                 ),
               ],
             ),
+            const Gap(20),
+            const BottomGap(),
           ],
         ),
       ),
