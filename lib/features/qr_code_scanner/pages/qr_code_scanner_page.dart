@@ -45,7 +45,7 @@ class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
               borderRadius: 3,
               cutOutWidth: 300,
               cutOutHeight: 300,
-              cutOutBottomOffset: 80,
+              cutOutBottomOffset: MediaQuery.of(context).size.height * 0.05,
             ),
           ),
           SafeArea(
