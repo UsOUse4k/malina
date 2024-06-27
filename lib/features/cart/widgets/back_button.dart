@@ -18,6 +18,7 @@ class BackButton extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       decoration: const BoxDecoration(shape: BoxShape.circle),
       child: Material(
+        color: Colors.transparent,
         child: InkWell(
           onTap: () {
             onTap?.call();
