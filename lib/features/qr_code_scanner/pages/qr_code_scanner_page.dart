@@ -81,7 +81,8 @@ class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
   void _onQRViewCreated(QRViewController controller) {
     this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
-      getIt<Talker>().log(scanData);
+      getIt<Talker>().log(scanData.code);
+      const HomeRoute().go(context);
     });
   }
 
